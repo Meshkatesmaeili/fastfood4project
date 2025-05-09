@@ -1,0 +1,231 @@
+body {
+    font-family: 'vazir', sans-serif;
+    background: #fef9f4;
+    color: #333;
+}
+
+.navbar-admin {
+    background: linear-gradient(to left, #f97316, #f59e0b);
+    color: #fff;
+    font-weight: bold;
+    height: 60px;
+}
+
+.username {
+    color: white;
+    font-weight: bold;
+}
+
+.sidebar {
+    background-color: #fff7ed;
+    height: 200vh;
+    border-left: 3px solid #f97316;
+}
+
+.sidebar .nav-link {
+    color: #f97316;
+    font-weight: 500;
+}
+
+.sidebar .nav-link:hover {
+    background-color: #ffedd5;
+    border-radius: 0.5rem;
+}
+
+.main-content .card {
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    background-color: #fff;
+}
+
+.stat-value {
+    font-size: 1.5rem;
+    color: #f97316;
+    font-weight: bold;
+}
+
+.card-header {
+    background: none;
+    border-bottom: 1px solid #fcd34d;
+    font-weight: bold;
+}
+
+
+/* sefareshat */
+
+body {
+    background-color: #fff7ed;
+    font-family: 'vazir', sans-serif;
+}
+
+.title {
+    color: #f97316;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-glass {
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(6px);
+    border: 1px solid #fcd34d;
+}
+
+.table th {
+    color: #f97316;
+}
+
+.badge {
+    font-size: 0.85rem;
+    padding: 0.5em 0.75em;
+    border-radius: 12px;
+}
+
+
+/* customers */
+
+body {
+    background-color: #f7f8f9;
+}
+
+.title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.card-glass {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.card-glass:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    font-size: 1.4rem;
+    color: #333;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #777;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.table thead th {
+    background-color: #f97316;
+    color: white;
+    font-weight: bold;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+.badge {
+    font-size: 0.85rem;
+    padding: 6px 12px;
+}
+
+.badge.bg-success {
+    background-color: #38a169;
+}
+
+.badge.bg-warning {
+    background-color: #f59e0b;
+}
+
+.badge.bg-danger {
+    background-color: #e53e3e;
+}
+
+
+/* setting */
+
+body {
+    background-color: #f9fafb;
+    font-family: 'Vazir', sans-serif;
+}
+
+.settings-title {
+    font-size: 1.8rem;
+    color: #f97316;
+    font-weight: bold;
+    text-align: center;
+}
+
+.settings-card {
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.settings-card .card-header {
+    background-color: #f97316;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 16px 20px;
+}
+
+.settings-card .card-body {
+    padding: 20px;
+}
+
+.btn-orange {
+    background-color: #f97316;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 8px 20px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.btn-orange:hover {
+    background-color: #ea580c;
+}
+
+
+/*  */
+
+body {
+    font-family: 'Vazir', sans-serif;
+    background-color: #f7f7f7;
+    direction: rtl;
+}
+
+.bg-orange {
+    background-color: #ff6b00;
+}
+
+.text-orange {
+    color: #ff6b00;
+}
+
+.btn-orange {
+    background-color: #ff6b00;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn-orange:hover {
+    background-color: #e65c00;
+}
+
+.profile-card {
+    border-radius: 16px;
+    overflow: hidden;
+}
