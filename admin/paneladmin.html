@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پنل ادمین فست فود</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap" rel="stylesheet">
+    <link href="css/styleadmin.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar-admin navbar-expand-lg px-4">
+        <a class="navbar-brand" href="#">پنل ادمین فست فود</a>
+        <div class="ms-auto username">مدیر سیستم</div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2 p-0 sidebar">
+                <ul class="nav flex-column p-3">
+                    <li class="nav-item"><a class="nav-link" href="paneladmin.html">داشبورد</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sefareshat.html">سفارشات</a></li>
+                    <li class="nav-item"><a class="nav-link" href="custumers.html">مشتریان</a></li>
+                    <li class="nav-item"><a class="nav-link" href="profile.html">پروفایل</a></li>
+                    <li class="nav-item"><a class="nav-link" href="reports.html">گزارش‌ها</a></li>
+                    <li class="nav-item"><a class="nav-link" href="setting.html">تنظیمات</a></li>
+                </ul>
+            </div>
+            <div class="col-md-10 p-4 main-content">
+                <div class="row g-4 mb-4">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h6 class="text-muted">سفارشات امروز</h6>
+                                <div class="stat-value">128</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h6 class="text-muted">درآمد امروز</h6>
+                                <div class="stat-value">۴٬۲۰۰٬۰۰۰ تومان</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h6 class="text-muted">غذای محبوب</h6>
+                                <div class="stat-value">برگر مخصوص</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-4 mb-4">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">نمودار فروش</div>
+                            <div class="card-body">
+                                <canvas id="salesChart" height="160"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">فعال‌ترین مشتریان</div>
+                            <div class="card-body">
+                                <canvas id="customersChart" height="160"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">سفارشات اخیر</div>
+                    <div class="card-body">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>مشتری</th>
+                                    <th>غذا</th>
+                                    <th>وضعیت</th>
+                                    <th>زمان</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>حسین کریمی</td>
+                                    <td>پیتزا مخصوص</td>
+                                    <td>تحویل شده</td>
+                                    <td>۱۰ دقیقه پیش</td>
+                                </tr>
+                                <tr>
+                                    <td>مریم محمدی</td>
+                                    <td>هات داگ کلاسیک</td>
+                                    <td>در حال آماده‌سازی</td>
+                                    <td>۲۰ دقیقه پیش</td>
+                                </tr>
+                                <tr>
+                                    <td>علی رضایی</td>
+                                    <td>برگر مخصوص</td>
+                                    <td>ثبت شده</td>
+                                    <td>۳۵ دقیقه پیش</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        const salesChart = new Chart(document.getElementById('salesChart'), {
+            type: 'line',
+            data: {
+                labels: ['شنبه', 'یک‌شنبه', 'دوشنبه', 'سه‌شنبه', 'چهارشنبه'],
+                datasets: [{
+                    label: 'فروش (تومان)',
+                    data: [1200000, 1800000, 1600000, 1900000, 2100000],
+                    borderColor: '#f97316',
+                    tension: 0.3,
+                    fill: false
+                }]
+            }
+        });
+        const customersChart = new Chart(document.getElementById('customersChart'), {
+            type: 'bar',
+            data: {
+                labels: ['رضا', 'مریم', 'سارا', 'حامد'],
+                datasets: [{
+                    label: 'تعداد سفارشات',
+                    data: [5, 3, 4, 6],
+                    backgroundColor: '#fb923c'
+                }]
+            }
+        });
+    </script>
+</body>
+
+</html>
